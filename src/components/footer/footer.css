@@ -1,0 +1,66 @@
+footer {
+    background-color: #13151E;
+    padding: 20px 180px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 0;
+}
+
+.mainFooter {
+    display: flex;
+    border-bottom: solid 1px #dbdbd74d;
+}
+
+.footerNav {
+    display: flex;
+    flex-direction: row;
+    margin-left: 60px;
+}
+
+.footerNav > div {
+    padding-right: 10px;
+}
+
+.footerNav > div:last-child {
+    padding-right: 0px;
+}
+
+.socialMedia {
+    padding-right: 24px;
+}
+
+footer ul {
+    flex-direction: column;
+    text-align: left;
+    padding-inline-start: 0px;
+    flex: 1;
+}
+
+footer li {
+    color: #DBDBD7;
+    border: solid 1px #ffffff;
+    min-width: 200px;
+
+}
+
+.copyright {
+    display: flex;
+}
+
+.copyright > div {
+    flex: 1;
+}
+
+.copyright > div:last-child {
+    text-align: right;
+    margin-top: 20px;
+}
+
+.copyright a {
+    margin: 20px;
+}
+
+.copyright a:last-child {
+    margin: 0px;
+}

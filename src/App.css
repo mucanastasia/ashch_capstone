@@ -1,3 +1,4 @@
+/*
 .App {
   text-align: center;
 }
@@ -35,4 +36,20 @@
   to {
     transform: rotate(360deg);
   }
+}
+*/
+
+a {
+  color: #DBDBD7;
+  text-decoration: none;
+}
+
+p {
+  color: #DBDBD7;
+  margin: 20px 0px;
+}
+
+h3 {
+  color: #DBDBD7;
+  margin-top: 0px;
 }
