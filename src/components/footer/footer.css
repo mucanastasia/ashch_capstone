@@ -3,6 +3,7 @@ footer {
     padding: 20px 180px;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     position: absolute;
     bottom: 0;
 }
@@ -46,14 +47,10 @@ footer li {
 
 .copyright {
     display: flex;
-}
-
-.copyright > div {
-    flex: 1;
+    justify-content: space-between
 }
 
 .copyright > div:last-child {
-    text-align: right;
     margin-top: 20px;
 }
 
