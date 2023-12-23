@@ -44,6 +44,9 @@
 
 * {
   font-family: Plus Jakarta Sans;
+  color: #DBDBD7;
+  margin: 0;
+  padding: 0;
 }
 
 a {
@@ -56,7 +59,20 @@ p {
   margin: 20px 0px;
 }
 
+h1 {
+  font-family: DM Sans;
+  color: #DBDBD7;
+  font-size: 60px;
+}
+
+h2 {
+  color: #DBDBD7;
+  font-size: 48px;
+}
+
 h3 {
   color: #DBDBD7;
   margin-top: 0px;
+  margin-left: 10px;
+  font-size: 20px;
 }

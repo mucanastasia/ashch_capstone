@@ -25,8 +25,8 @@ export default function Nav() {
         },
         ];
 
-    const listItems = links.map(links => {
-        return <li><a href={links.link} alt={links.alt}>{links.name}</a></li>
+    const listItems = links.map(({name, link, alt}) => {
+        return <a href={link} alt={alt}><li>{name}</li></a>
     });
 
 

@@ -5,6 +5,9 @@ export default function Main() {
   return (
     <main>
         <section id='hero'>
+        {
+            // TODO: extract "Hero" component
+        }
             <article>
                 <h1>Aka Momiji Lounge</h1>
                 <span>"Where Kyoto Inspires Every Bite"</span>
@@ -16,8 +19,11 @@ export default function Main() {
             </article>
         </section>
         <section id='specials'>
+        {
+            // TODO: extract "Section" component
+        }
             <h2>Specials</h2>
-            <p>Experience culinary brilliance with our Chef's Specials</p>
+            <h4>Experience culinary brilliance with our Chef's Specials</h4>
             {
                 // TODO: 3 cards with specials
                 // <article></article>
@@ -25,20 +31,23 @@ export default function Main() {
         </section>
         <section id='reserve'>
             <h2>Reserve a Table</h2>
-            <p>Plan your dining experience by booking a table in advance</p>
+            <h4>Plan your dining experience by booking a table in advance</h4>
             {
                 // TODO: forms for reservation a table
             }
         </section>
         <section id='reviews'>
             <h2>What Our Clients Say</h2>
-            <p>We are dedicated to enhancing your experience and value your feedback</p>
+            <h4>We are dedicated to enhancing your experience and value your feedback</h4>
             {
                 // TODO: 4 cards with reviews
                 // <article></article>
             }
         </section>
         <section id='about'>
+        {
+            // TODO: extract "About" component
+        }
             <article>
                 <h1>Aka Momiji Lounge</h1>
                 <span>"Where Kyoto Inspires Every Bite"</span>
