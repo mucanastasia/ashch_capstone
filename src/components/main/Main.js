@@ -6,23 +6,6 @@ export default function Main() {
   return (
     <main>
         <Hero name='hero' />
-        {
-        //<section id='hero'>
-        
-            // TODO: extract "Hero" component
-            // <article>
-            //     <h1>Aka Momiji Lounge</h1>
-            //     <span>"Where Kyoto Inspires Every Bite"</span>
-            //     <p>
-            //         Indulge in the exquisite at Aka Momiji Lounge, a premium sushi haven meticulously crafted with inspiration from the elegance 
-            //         of Kyoto. Immerse yourself in a culinary journey, echoing the rich cultural tapestry of Kyoto in every bite.
-            //     </p>
-            //     <button>Reserve a table</button>
-            // </article>
-        
-            
-        //</section>
-        }
         <section id='specials'>
         {
             // TODO: extract "Section" component
@@ -49,20 +32,6 @@ export default function Main() {
                 // <article></article>
             }
         </section>
-        {/* <section id='about'>
-        {
-            // TODO: extract "About" component
-        }
-            <article>
-                <h1>Aka Momiji Lounge</h1>
-                <span>"Where Kyoto Inspires Every Bite"</span>
-                <p>
-                    In the heart of the city, Aka Momiji Lounge pays tribute to Kyoto's grace, embodying transformative beauty as a premium sushi 
-                    haven. Each dish echoes Kyoto's traditions, inviting you to savor a symphony of flavors. Step into a realm where modern elegance 
-                    meets timeless charm, where every bite is a brushstroke on the canvas of Kyoto's rich cultural heritage.
-                </p>
-            </article>
-        </section> */}
         <Hero name='about' />
     </main>
   );
