@@ -1,38 +1,23 @@
 import React from 'react';
 import './main.css';
 import Hero from './hero/Hero';
+import Section from './section/Section'
 
 export default function Main() {
   return (
     <main>
         <Hero name='hero' />
-        <section id='specials'>
-        {
-            // TODO: extract "Section" component
-        }
-            <h2>Specials</h2>
-            <h4>Experience culinary brilliance with our Chef's Specials</h4>
-            {
-                // TODO: 3 cards with specials
-                // <article></article>
-            }
-        </section>
-        <section id='reserve'>
-            <h2>Reserve a Table</h2>
-            <h4>Plan your dining experience by booking a table in advance</h4>
-            {
-                // TODO: forms for reservation a table
-            }
-        </section>
-        <section id='reviews'>
-            <h2>What Our Clients Say</h2>
-            <h4>We are dedicated to enhancing your experience and value your feedback</h4>
-            {
-                // TODO: 4 cards with reviews
-                // <article></article>
-            }
-        </section>
-        <Hero name='about' />
+        <Section name='specials' title='Specials' subtitle={`Experience culinary brilliance with our Chef's Specials`} />
+        <Section name='reservation' title='Reserve a Table' subtitle='Plan your dining experience by booking a table in advance' />
+        <Section name='reviews' title='What Our Clients Say' subtitle='We are dedicated to enhancing your experience and value your feedback' />
+         <Hero name='about' />
     </main>
   );
+}
+
+{
+    // TODO: extract "Section" component
+    // TODO: 3 cards with specials
+    // TODO: forms for reservation a table
+    // TODO: 4 cards with reviews
 }
