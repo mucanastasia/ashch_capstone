@@ -4,29 +4,29 @@ import './nav.css';
 export default function Nav() {
     const links = [
         {
-            name: "Home",
-            link: "#",
-            alt: "Home",
+            id: 'navHome',
+            name: 'Home',
+            link: '#',
         },
         {
-            name: "Specials",
-            link: "#",
-            alt: "Specials",
+            id: 'navSpecials',
+            name: 'Specials',
+            link: '#',
         },
         {
-            name: "About Us",
-            link: "#",
-            alt: "About Us",
+            id: 'navAboutus',
+            name: 'About Us',
+            link: '#',
         },
         {
-            name: "Reserve a Table",
-            link: "#",
-            alt: "Reserve a Table",
+            id: 'navReservation',
+            name: 'Reserve a Table',
+            link: '#',
         },
-        ];
+    ];
 
-    const listItems = links.map(({name, link, alt}) => {
-        return <a href={link} alt={alt}><li>{name}</li></a>
+    const listItems = links.map(({id, name, link}) => {
+        return <a href={link} alt={name} key={id}><li>{name}</li></a>
     });
 
 

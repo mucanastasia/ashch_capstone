@@ -9,22 +9,26 @@ import instagram from './assets/instagram.svg';
 export default function Footer() {
     const socialMedia = [
         {
-            name: "LinkedIn",
+            id: 'myLinkedIn',
+            name: 'LinkedIn',
             src: linkedIn,
             link: '#',
         },
         {
-            name: "GitHub",
+            id: 'myGitHub',
+            name: 'GitHub',
             src: gitHub,
             link: 'https://github.com/mucanastasia',
         },
         {
-            name: "Facebook",
+            id: 'myFacebook',
+            name: 'Facebook',
             src: facebook,
             link: '#',
         },
         {
-            name: "Instagram",
+            id: 'myInstagram',
+            name: 'Instagram',
             src: instagram,
             link: '#',
         },
@@ -32,81 +36,84 @@ export default function Footer() {
 
     const footerNav = [
         {
-            name: "Home",
-            link: "#",
-            alt: "Home",
+            id: 'footerHome',
+            name: 'Home',
+            link: '#',
         },
         {
-            name: "Specials",
-            link: "#",
-            alt: "Specials",
+            id: 'footerSpecials',
+            name: 'Specials',
+            link: '#',
         },
         {
-            name: "About Us",
-            link: "#",
-            alt: "About Us",
+            id: 'footerAboutus',
+            name: 'About Us',
+            link: '#',
         },
         {
-            name: "Reserve a Table",
-            link: "#",
-            alt: "Reserve a Table",
+            id: 'footerReservation',
+            name: 'Reserve a Table',
+            link: '#',
         },
     ];
 
     const footerContact = [
         {
-            content: "22 Sakura St, Ephemera",
-            alt: "Address",
+            id: 'address',
+            content: '22 Sakura St, Ephemera',
+            alt: 'Address',
         },
         {
-            content: "mail@akamomiji.site",
-            alt: "E-mail",
+            id: 'email',
+            content: 'mail@akamomiji.site',
+            alt: 'E-mail',
         },
         {
-            content: "+123 3456789",
-            alt: "Phone number",
+            id: 'phoneNumber',
+            content: '+123 3456789',
+            alt: 'Phone number',
         },
     ];
 
     const footerSocial = [
         {
-            name: "Instagram",
-            link: "#",
-            alt: "Instagram",
+            id: 'instagram',
+            name: 'Instagram',
+            link: '#',
         },
         {
-            name: "Facebook",
-            link: "#",
-            alt: "Facebook",
+            id: 'facebook',
+            name: 'Facebook',
+            link: '#',
         },
         {
-            name: "Twitter",
-            link: "#",
-            alt: "Twitter",
+            id: 'twitter',
+            name: 'Twitter',
+            link: '#',
         },
     ];
 
-    const socialMediaItems = socialMedia.map(({name, link, src}) => {
-        return <a className='socialMedia' href={link} alt={name}><img src={src} alt={name}/></a>
+    const socialMediaItems = socialMedia.map(({id, name, link, src}) => {
+        return <a className='socialMedia' href={link} alt={name} key={id}><img src={src} alt={name}/></a>
     });
     
-    const footerNavItems = footerNav.map(({name, link, alt}) => {
-        return <a href={link} alt={alt}><li>{name}</li></a>
+    const footerNavItems = footerNav.map(({id, name, link}) => {
+        return <a href={link} alt={name} key={id}><li>{name}</li></a>
     });
 
-    const footerContactItems = footerContact.map(({content, alt}) => {
-        return <li alt={alt}>{content}</li>
+    const footerContactItems = footerContact.map(({id, content, alt}) => {
+        return <li alt={alt} key={id}>{content}</li>
     });
 
-    const footerSocialItems = footerSocial.map(({name, link, alt}) => {
-        return <a href={link} alt={alt}><li>{name}</li></a>
+    const footerSocialItems = footerSocial.map(({id, name, link}) => {
+        return <a href={link} alt={name} key={id}><li>{name}</li></a>
     });
 
   return (
     <footer>
         <div className='mainFooter'>
             <div className='credit'>
-                <img src={logo} alt="Logo" />
+                <img src={logo} alt='Logo' />
                 <p>{`This project was conceived and developed by Anastasia Shchodro with the assistance of AI (content & logo)`}</p>
                 <div>
                     {socialMediaItems}
