@@ -1,0 +1,15 @@
+.activeStar {
+    background-image: url(./assets/red_star.svg);
+    width: 22px;
+    height: 20px;
+    display: inline-block;
+    margin-right: 4px;
+}
+
+.inActiveStar {
+    background-image: url(./assets/grey_star.svg);
+    width: 22px;
+    height: 20px;
+    display: inline-block;
+    margin-right: 4px;
+}
