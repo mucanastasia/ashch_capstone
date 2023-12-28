@@ -2,6 +2,7 @@ import React from 'react';
 import img1 from './assets/img1.png';
 import img2 from './assets/img2.png';
 import img3 from './assets/img3.png';
+import './specials.css';
 
 
 export default function Specials({name, title, subtitle}) {
@@ -34,13 +35,13 @@ export default function Specials({name, title, subtitle}) {
 
     const specialsList = specialsContent.map(({id, name, img, content, price, showButton}) => {
       return (
-        <article key={id}>
+        <article key={id} className='specialCard'>
           <div>
             <img src={img} alt={name} />
             <h5>{name}</h5>
             <p>{content}</p>
             </div>
-            <div>
+            <div className='specialFooter'>
               <span>{price}</span>
               {showButton && <button>See more</button>}
             </div>
@@ -50,10 +51,12 @@ export default function Specials({name, title, subtitle}) {
 
 
   return (
-    <section id={name}>
+    <section className={name}>
       <h2>{title}</h2>
       <h4>{subtitle}</h4>
-      {specialsList}
+      <div>
+        {specialsList}
+      </div>
     </section>
   );
 }

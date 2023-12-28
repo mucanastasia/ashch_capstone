@@ -34,7 +34,7 @@ footer {
 }
 
 .footerNav > div {
-    padding-right: 10px;
+    padding-right: 20px;
 }
 
 .footerNav > div:last-child {
@@ -49,6 +49,10 @@ footer {
 
 .socialMedia img:hover {
     transform: scale(110%);
+}
+
+.socialMedia img:active {
+    transform: scale(100%);
 }
 
 footer ul {

@@ -1,0 +1,59 @@
+.specials {
+    margin-top: 40px;
+}
+.specials > div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 4px;
+}
+
+.specialCard {
+    background-color: rgb(255, 255, 255, 0.1);
+    width: 300px;
+    border-radius: 8px;
+    padding: 24px 24px 40px 24px;
+    margin-bottom: 20px;
+    transition: transform 0.5s;
+}
+
+.specialCard:hover {
+    transform: scale(104%);
+}
+
+.specialCard:last-child {
+    margin-right: 0;
+}
+
+.special article img {
+    border-radius: 6px;
+}
+
+.specialCard p {
+    display: -webkit-box; /* For webkit-based browsers */
+    display: -moz-box; /* For Firefox */
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2; /* Limit the number of displayed lines */
+    -moz-line-clamp: 2; /* For Firefox */
+    max-height: 48px;
+    line-height: 24px;
+    font-family: DM Sans;
+    font-size: 16px;
+}
+
+.specialFooter {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.specialFooter > span {
+    font-family: DM Sans;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 50px;
+}
