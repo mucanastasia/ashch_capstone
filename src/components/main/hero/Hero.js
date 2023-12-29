@@ -1,5 +1,6 @@
 import React from 'react';
 import './hero.css';
+import Button from '../button/Button';
 
 
 export default function Hero({name}) {
@@ -9,6 +10,8 @@ export default function Hero({name}) {
         subtitle: `"Where Kyoto Inspires Every Bite"`,
         mainText: 'Indulge in the exquisite at Aka Momiji Lounge, a premium sushi haven meticulously crafted with inspiration from the elegance of Kyoto. Immerse yourself in a culinary journey, echoing the rich cultural tapestry of Kyoto in every bite.',
         showButton: true,
+        buttonText: 'Reserve a Table',
+        buttonType: 'primary',
     }
 
     const aboutContent = {
@@ -27,12 +30,14 @@ export default function Hero({name}) {
     }
 
   return (
-    <section id={displayContent.id}>
+    <section className={displayContent.id}>
         <article>
-            <h1>{displayContent.title}</h1>
+            <div>
+                <h1>{displayContent.title}</h1>
                 <span>{displayContent.subtitle}</span>
                 <p>{displayContent.mainText}</p>
-                {displayContent.showButton && <button>Reserve a table</button>}
+                {displayContent.showButton && <Button name={displayContent.buttonText} type={displayContent.buttonType} />}
+            </div>
         </article>
     </section>
   );

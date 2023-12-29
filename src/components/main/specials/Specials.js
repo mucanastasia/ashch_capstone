@@ -2,6 +2,7 @@ import React from 'react';
 import img1 from './assets/img1.png';
 import img2 from './assets/img2.png';
 import img3 from './assets/img3.png';
+import Button from '../button/Button';
 import './specials.css';
 
 
@@ -43,7 +44,7 @@ export default function Specials({name, title, subtitle}) {
             </div>
             <div className='specialFooter'>
               <span>{price}</span>
-              {showButton && <button>See more</button>}
+              {showButton && <Button type='secondary' name='See more' />}
             </div>
         </article>
       );
@@ -52,10 +53,12 @@ export default function Specials({name, title, subtitle}) {
 
   return (
     <section className={name}>
-      <h2>{title}</h2>
-      <h4>{subtitle}</h4>
-      <div>
-        {specialsList}
+      <div className='container'>
+        <h2>{title}</h2>
+        <h4>{subtitle}</h4>
+        <div>
+          {specialsList}
+        </div>
       </div>
     </section>
   );

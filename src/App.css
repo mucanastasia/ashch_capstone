@@ -47,6 +47,7 @@
   color: #DBDBD7;
   margin: 0;
   padding: 0;
+  letter-spacing: 0.5px;
 }
 
 a {
@@ -63,12 +64,16 @@ h1 {
   font-family: DM Sans;
   color: #DBDBD7;
   font-size: 60px;
+  font-weight: 700;
+  line-height: 76px;
+  margin-bottom: 12px;
 }
 
 h2 {
   color: #DBDBD7;
   font-size: 48px;
   line-height: 150%;
+  font-weight: 500;
 }
 
 h3 {
@@ -91,28 +96,4 @@ h5 {
   font-weight: 400;
   line-height: 22px;
   margin: 32px 0 16px 0;
-}
-
-button {
-  font-family: DM Sans;
-  font-size: 16px;
-  line-height: 24px;
-  text-align: center;
-  color: #DBDBD7;
-  margin-left: 10px;
-  padding: 12px 20px;
-  border-radius: 50px;
-  border: 1px solid #B0334B;
-  transition: all 0.5s ease-out;
-  background-color : transparent;
-  outline: none;
-}
-
-button:hover {
-  color: #DBDBD7;
-  background-color: rgb(176, 51, 75, 0.8);
-}
-
-button:active {
-  transform: scale(94%);
 }

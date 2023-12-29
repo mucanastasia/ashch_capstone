@@ -1,18 +1,69 @@
 
-#hero {
+.hero {
     margin: 0;
-    padding: 0 10%;
-    background: url(./assets/herobg.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 800px;
-}
-
-#about {
-    margin: 0;
-    padding: 0 10%;
-    background: url(./assets/aboutbg.png);
+    background: 
+        linear-gradient(180deg, rgba(66, 65, 65, 0.00) 62%, #424241 100%),
+        url(./assets/herobg.png);
     background-repeat: no-repeat;
     background-size: cover;
     height: 720px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
+
+.hero > article {
+    max-width: 1080px;
+    margin: 0 auto;
+    margin-top: -80px;
+    flex: auto;
+    padding: 0 10%;
+}
+
+.hero > article > div {
+    max-width: 612px;
+}
+
+.hero span, .about span {
+    font-size: 22px;
+    font-family: DM Sans;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: 0.15px;
+}
+
+.hero p, .about p {
+    font-family: DM Sans;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0.5px;
+    margin: 24px 0;
+}
+
+.about {
+    margin: 0;
+    background: 
+        linear-gradient(180deg, #1D202F 0%, rgba(29, 32, 47, 0.00) 36%),
+        url(./assets/aboutbg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 720px;
+    display: flex;
+    align-items: center;
+}
+
+.about > article {
+    max-width: 1080px;
+    margin: 0 auto;
+    flex: auto;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 10%;
+}
+
+.about > article > div {
+    max-width: 720px;
+}
+

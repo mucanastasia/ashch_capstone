@@ -1,0 +1,55 @@
+.spinner {
+    border: 4px solid rgba(255, 255, 255, 0.3);
+    border-top: 4px solid #007BFF;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    animation: spin 1s linear infinite;
+    margin-right: 10px;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+button {
+    font-family: DM Sans;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #DBDBD7;
+    padding: 12px 20px;
+    border-radius: 50px;
+    border: 1px solid;
+    border-color: #B0334B;
+    transition: all 0.5s ease-out;
+    outline: none;
+}
+
+button.primary {
+    background-color: #B0334B;
+}
+
+button.primary:hover {
+    background-color: #962b41;
+    border-color: #962b41;
+    transform: scale(104%);
+}
+
+button.primary:active {
+    transform: scale(98%);
+}
+
+button.secondary {
+    background-color : transparent;
+}
+
+button.secondary:hover {
+    background-color: rgb(176, 51, 75, 0.7);
+    border-color: rgb(176, 51, 75, 0);
+}
+
+button.secondary:active {
+    transform: scale(94%);
+}
