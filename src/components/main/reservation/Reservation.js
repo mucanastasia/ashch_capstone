@@ -1,9 +1,10 @@
 import React from 'react';
+import './reservation.css';
 
 
 export default function Reservation({name, title, subtitle}) {
   return (
-    <section id={name}>
+    <section className={name}>
       <h2>{title}</h2>
       <h4>{subtitle}</h4>
       <article>

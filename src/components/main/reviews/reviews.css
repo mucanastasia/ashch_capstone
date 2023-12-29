@@ -1,3 +1,57 @@
+section.reviews {
+    margin: 0;
+    padding-bottom: 40px;
+}
+
+.reviews > .container {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 0 10%;
+}
+
+.reviews > .container > div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.rewiewCard {
+    background-color: rgb(255, 255, 255, 0.1);
+    width: 212px;
+    height: 134px;
+    border-radius: 8px;
+    padding: 24px 24px 24px 24px;
+    margin-bottom: 100px;
+    transition: transform 0.5s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.rewiewCard:hover {
+    transform: scale(104%);
+}
+
+.reviewHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.reviewHeader p {
+    font-family: DM Sans;
+    font-size: 16px;
+    line-height: 20px;
+    margin: 0 0 8px 2px;
+}
+
+.rewiewCard > p {
+    margin: 0;
+    line-height: 28px;
+    font-family: DM Sans;
+    font-size: 18px;
+}
+
 .reviewImg {
     width: 52px;
     height: 52px;

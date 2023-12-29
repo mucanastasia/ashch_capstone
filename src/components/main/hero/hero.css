@@ -1,5 +1,8 @@
+.heroContainer {
+    margin-bottom: 20px;
+}
 
-.hero {
+.mainHero {
     margin: 0;
     background: 
         linear-gradient(180deg, rgba(66, 65, 65, 0.00) 62%, #424241 100%),
@@ -12,19 +15,18 @@
     align-items: center;
 }
 
-.hero > article {
+.mainHero > article {
     max-width: 1080px;
     margin: 0 auto;
-    margin-top: -80px;
     flex: auto;
     padding: 0 10%;
 }
 
-.hero > article > div {
+.mainHero > article > .heroContainer {
     max-width: 612px;
 }
 
-.hero span, .about span {
+.mainHero span, .aboutHero span {
     font-size: 22px;
     font-family: DM Sans;
     font-weight: 600;
@@ -32,7 +34,7 @@
     letter-spacing: 0.15px;
 }
 
-.hero p, .about p {
+.mainHero p, .aboutHero p {
     font-family: DM Sans;
     font-size: 20px;
     font-style: normal;
@@ -42,7 +44,7 @@
     margin: 24px 0;
 }
 
-.about {
+.aboutHero {
     margin: 0;
     background: 
         linear-gradient(180deg, #1D202F 0%, rgba(29, 32, 47, 0.00) 36%),
@@ -54,7 +56,7 @@
     align-items: center;
 }
 
-.about > article {
+.aboutHero > article {
     max-width: 1080px;
     margin: 0 auto;
     flex: auto;
@@ -63,7 +65,6 @@
     padding: 0 10%;
 }
 
-.about > article > div {
+.aboutHero > article > .heroContainer {
     max-width: 720px;
 }
-

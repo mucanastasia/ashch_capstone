@@ -29,10 +29,6 @@ section.specials {
     transform: scale(104%);
 }
 
-.specialCard:last-child {
-    margin-right: 0;
-}
-
 .special article img {
     border-radius: 6px;
 }

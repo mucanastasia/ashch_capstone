@@ -40,26 +40,28 @@ export default function Reviews({name, title, subtitle}) {
 
   const reviewsList = reviewsContent.map(({id, img, name, stars, review}) => {
     return (
-      <article key={id}>
-        <div>
+      <article key={id} className='rewiewCard'>
+        <div className='reviewHeader'>
           <img className='reviewImg' src={img} alt={name} />
-        </div>
-        <div>
-          <p>{name}</p>
-          <Stars number={stars} id={id} />
-        </div>
           <div>
-            <p>{review}</p>
+            <p>{name}</p>
+            <Stars number={stars} id={id} />
           </div>
+        </div>
+            <p>{review}</p>
       </article>
     );
   });
 
   return (
-    <section id={name}>
-      <h2>{title}</h2>
-      <h4>{subtitle}</h4>
-      {reviewsList}
+    <section className={name}>
+      <div className='container'>
+        <h2>{title}</h2>
+        <h4>{subtitle}</h4>
+        <div>
+          {reviewsList}
+        </div>
+      </div>
     </section>
   );
 }
