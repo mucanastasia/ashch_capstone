@@ -1,4 +1,5 @@
 import React from 'react';
+import Button from '../../main/button/Button';
 import './nav.css';
 
 export default function Nav() {
@@ -18,11 +19,6 @@ export default function Nav() {
             name: 'About Us',
             link: '#',
         },
-        {
-            id: 'navReservation',
-            name: 'Reserve a Table',
-            link: '#',
-        },
     ];
 
     const listItems = links.map(({id, name, link}) => {
@@ -35,6 +31,7 @@ export default function Nav() {
             <ul>
                 {listItems}
             </ul>
+            <Button name='Reserve a Table' type='primary' />
         </nav>
     );
 }

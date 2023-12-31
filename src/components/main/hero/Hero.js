@@ -6,6 +6,7 @@ import Button from '../button/Button';
 export default function Hero({name}) {
     const heroContent = {
         id: 'mainHero',
+        animationClass: 'animationHero',
         title: 'Aka Momiji Lounge',
         subtitle: `"Where Kyoto Inspires Every Bite"`,
         mainText: 'Indulge in the exquisite at Aka Momiji Lounge, a premium sushi haven meticulously crafted with inspiration from the elegance of Kyoto. Immerse yourself in a culinary journey, echoing the rich cultural tapestry of Kyoto in every bite.',
@@ -33,9 +34,9 @@ export default function Hero({name}) {
     <section className={displayContent.id}>
         <article>
             <div className='heroContainer'>
-                <h1>{displayContent.title}</h1>
-                <span>{displayContent.subtitle}</span>
-                <p>{displayContent.mainText}</p>
+                <h1 className={displayContent.animationClass}>{displayContent.title}</h1>
+                <span className={displayContent.animationClass}>{displayContent.subtitle}</span>
+                <p className={displayContent.animationClass}>{displayContent.mainText}</p>
                 {displayContent.showButton && <Button name={displayContent.buttonText} type={displayContent.buttonType} />}
             </div>
         </article>

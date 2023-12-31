@@ -1,16 +1,40 @@
 nav {
     display: flex;
-    flex-direction: row;
-    align-items: right;
-    justify-content: right;
 }
 
-ul {
+nav ul {
     list-style: none;
-    text-align: center;
     display: flex;
+    justify-content: space-between;
 }
 
-li {
-    padding: 10px;
+
+nav li {
+    font-family: DM Sans;
+}
+
+nav a {
+    padding: 23px 24px;
+    line-height: 24px;
+    transition: all 0.5s ease-out;
+}
+
+nav a:hover {
+    background-color: rgb(255, 255, 255, 0.1);
+}
+
+nav a:active {
+    transform: scale(94%);
+}
+
+nav > button.primary {
+    margin: 10px 8px;
+}
+
+nav > button.primary:hover {
+    transform: none;
+}
+
+nav > button.primary:active {
+    transform: scale(94%);
 }

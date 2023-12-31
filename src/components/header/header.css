@@ -1,8 +1,22 @@
 header {
     background-color: #35363F;
     color: #DBDBD7;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.headerContainer {
     display: flex;
-    flex-direction: row;
+    flex-wrap: nowrap;
     justify-content: space-between;
-    padding: 10px 10% 10px 10%;
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 0 10%;
+    align-items: center;
+}
+
+.headerContainer button {
+    margin: 8px;
 }

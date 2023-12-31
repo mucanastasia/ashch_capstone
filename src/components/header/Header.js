@@ -7,8 +7,10 @@ import logo from './assets/logo.svg';
 export default function Header() {
   return (
     <header>
+      <div className='headerContainer'>
         <img src={logo} alt="Logo" />
         <Nav />
+      </div>
     </header>
   );
 }
