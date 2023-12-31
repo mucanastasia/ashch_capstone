@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/ashch_capstone/static/css/main.bd2a0d3a.css",
+    "main.js": "/ashch_capstone/static/js/main.4c6d9ca2.js",
+    "static/js/787.c76bff8d.chunk.js": "/ashch_capstone/static/js/787.c76bff8d.chunk.js",
+    "static/media/aboutbg.png": "/ashch_capstone/static/media/aboutbg.afd6c8930e58f4f4cb55.png",
+    "static/media/herobg.png": "/ashch_capstone/static/media/herobg.65049ed6995f0f1dfe0e.png",
+    "static/media/img2.png": "/ashch_capstone/static/media/img2.261879ba2bf17634c33a.png",
+    "static/media/img1.png": "/ashch_capstone/static/media/img1.b2c566b9017078feec1e.png",
+    "static/media/img3.png": "/ashch_capstone/static/media/img3.0773061ff8e8ae3a1d16.png",
+    "static/media/sophia.png": "/ashch_capstone/static/media/sophia.5e6ae8e8fa6559cfba39.png",
+    "static/media/nathan.png": "/ashch_capstone/static/media/nathan.8efe1a0f5cf0745fde1a.png",
+    "static/media/ethan.png": "/ashch_capstone/static/media/ethan.b22a8e7dcc1b7f489570.png",
+    "static/media/olivia.png": "/ashch_capstone/static/media/olivia.162b0cabff575d060959.png",
+    "static/media/logo.svg": "/ashch_capstone/static/media/logo.4a887b8b72dd0a9155a543df5f8e55b6.svg",
+    "static/media/footerLogo.svg": "/ashch_capstone/static/media/footerLogo.c52972d0af6e2b2ec34ebcdcef795fe7.svg",
+    "static/media/instagram.svg": "/ashch_capstone/static/media/instagram.5fe436ac43ce2f0c60cf85f1dfa0640c.svg",
+    "static/media/github.svg": "/ashch_capstone/static/media/github.72cfbe9c3358afe1ce14b065e7d41b97.svg",
+    "index.html": "/ashch_capstone/index.html",
+    "static/media/linkedin.svg": "/ashch_capstone/static/media/linkedin.fcd9236afe7265214267eb9ebdfb713a.svg",
+    "static/media/grey_star.svg": "/ashch_capstone/static/media/grey_star.fed1098c3af36ca34612.svg",
+    "static/media/red_star.svg": "/ashch_capstone/static/media/red_star.a6c82745c6a5545744f7.svg",
+    "static/media/facebook.svg": "/ashch_capstone/static/media/facebook.f0f411376af550528f97216db0aae099.svg",
+    "main.bd2a0d3a.css.map": "/ashch_capstone/static/css/main.bd2a0d3a.css.map",
+    "main.4c6d9ca2.js.map": "/ashch_capstone/static/js/main.4c6d9ca2.js.map",
+    "787.c76bff8d.chunk.js.map": "/ashch_capstone/static/js/787.c76bff8d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bd2a0d3a.css",
+    "static/js/main.4c6d9ca2.js"
+  ]
+}
