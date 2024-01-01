@@ -80,14 +80,14 @@
         url(./assets/aboutbg.png);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 720px;
+    height: 780px;
     display: flex;
     align-items: center;
 }
 
 .aboutHero > article {
     max-width: 1080px;
-    margin: 0 auto;
+    margin: 0 auto 40px auto;
     flex: auto;
     display: flex;
     justify-content: flex-end;

@@ -52,7 +52,7 @@ export default function Specials({name, title, subtitle}) {
 
 
   return (
-    <section className={name}>
+    <section className={name} id={name}>
       <div className='container'>
         <h2>{title}</h2>
         <h4>{subtitle}</h4>

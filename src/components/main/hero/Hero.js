@@ -6,6 +6,7 @@ import Button from '../button/Button';
 export default function Hero({name}) {
     const heroContent = {
         id: 'mainHero',
+        sectionId: 'hero',
         animationClass: 'animationHero',
         title: 'Aka Momiji Lounge',
         subtitle: `"Where Kyoto Inspires Every Bite"`,
@@ -17,6 +18,7 @@ export default function Hero({name}) {
 
     const aboutContent = {
         id: 'aboutHero',
+        sectionId: 'about',
         title: 'Aka Momiji Lounge',
         subtitle: `"Where Kyoto Inspires Every Bite"`,
         mainText: `In the heart of the city, Aka Momiji Lounge pays tribute to Kyoto's grace, embodying transformative beauty as a premium sushi haven. Each dish echoes Kyoto's traditions, inviting you to savor a symphony of flavors. Step into a realm where modern elegance meets timeless charm, where every bite is a brushstroke on the canvas of Kyoto's rich cultural heritage.`,
@@ -31,7 +33,7 @@ export default function Hero({name}) {
     }
 
   return (
-    <section className={displayContent.id}>
+    <section className={displayContent.id} id={displayContent.sectionId}>
         <article>
             <div className='heroContainer'>
                 <h1 className={displayContent.animationClass}>{displayContent.title}</h1>

@@ -34,26 +34,44 @@ export default function Footer() {
         },
     ];
 
+    const handleClick = (anchor) => (event) => {
+        event.preventDefault();
+        const element = document.getElementById(anchor);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth', block: 'start', });
+        }
+    };
+
     const footerNav = [
         {
             id: 'footerHome',
             name: 'Home',
-            link: '#',
+            link: '/',
+            fnc: handleClick('hero'),
         },
         {
             id: 'footerSpecials',
             name: 'Specials',
-            link: '#',
+            link: '#specials',
+            fnc: handleClick('specials'),
+        },
+        {
+            id: 'footerReviews',
+            name: 'Reviews',
+            link: '#reviews',
+            fnc: handleClick('reviews'),
         },
         {
             id: 'footerAboutus',
             name: 'About Us',
-            link: '#',
+            link: '#about',
+            fnc: handleClick('about'),
         },
         {
             id: 'footerReservation',
             name: 'Reserve a Table',
-            link: '#',
+            link: '#reservation',
+            fnc: handleClick('reservation'),
         },
     ];
 
@@ -96,9 +114,9 @@ export default function Footer() {
     const socialMediaItems = socialMedia.map(({id, name, link, src}) => {
         return <a className='socialMedia' href={link} alt={name} key={id} target='_blank' rel='noopener noreferrer' ><img src={src} alt={name}/></a>
     });
-    
-    const footerNavItems = footerNav.map(({id, name, link}) => {
-        return <a href={link} alt={name} key={id}><li>{name}</li></a>
+
+    const footerNavItems = footerNav.map(({id, name, link, fnc}) => {
+        return <a href={link} alt={name} key={id} onClick={fnc}><li>{name}</li></a>
     });
 
     const footerContactItems = footerContact.map(({id, content, alt}) => {

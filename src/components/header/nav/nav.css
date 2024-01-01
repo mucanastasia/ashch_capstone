@@ -2,39 +2,147 @@ nav {
     display: flex;
 }
 
-nav ul {
+nav > .desktopNav {
+    display: flex;
+}
+
+nav > .desktopNav > ul {
     list-style: none;
     display: flex;
     justify-content: space-between;
 }
 
-
-nav li {
+nav > .desktopNav li {
     font-family: DM Sans;
-}
-
-nav a {
-    padding: 23px 24px;
+    padding: 23px 12px;
     line-height: 24px;
     transition: all 0.5s ease-out;
 }
 
-nav a:hover {
+nav > .desktopNav li:hover {
     background-color: rgb(255, 255, 255, 0.1);
+    cursor: pointer;
 }
 
-nav a:active {
+nav > .desktopNav li:active {
     transform: scale(94%);
 }
 
-nav > button.primary {
+nav > .desktopNav > button.primary {
     margin: 10px 8px;
 }
 
-nav > button.primary:hover {
+nav > .desktopNav > button.primary:hover {
     transform: none;
 }
 
-nav > button.primary:active {
+nav > .desktopNav > button.primary:active {
     transform: scale(94%);
+}
+
+/* Hamburger fold-out menu made by Erik Terwan https://erikterwan.com/ */
+
+.menuToggle {
+    display: block;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.menuToggle input {
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -6px;
+    left: -4px;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 2;
+    -webkit-touch-callout: none;
+}
+
+.menuToggle span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    background: #DBDBD7;
+    border-radius: 3px;
+    z-index: 1;
+    transform-origin: 4px 0px;
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                opacity 0.55s ease;
+}
+
+.menuToggle span:first-child {
+     transform-origin: 0% 0%;
+}
+
+.menuToggle span:nth-last-child(2) {
+    transform-origin: 0% 100%;
+}
+
+.menuToggle input:checked ~ span {
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: #DBDBD7;
+}
+
+.menuToggle input:checked ~ span:nth-last-child(3) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+.menuToggle input:checked ~ span:nth-last-child(2) {
+    transform: rotate(-45deg) translate(0, -1px);
+}
+
+.menu {
+    position: absolute;
+    width: 410px;
+    height: 1024px;
+    margin: 12px 0 0 60px;
+    padding: 20px 10px;
+    background: #35363F;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    transform-origin: 0% 0%;
+    transition: transform 0.7s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+.menu > ul {
+    flex-direction: column;
+    list-style-type: none;
+    align-items: right;
+}
+
+.menu > a > li {
+    padding: 20px 20px;
+    font-size: 18px;
+    margin: 30px 40px 30px 120px;
+    text-align: right;
+    text-decoration: none;
+    color: #DBDBD7;
+    border-bottom: dotted 1px rgb(219, 219, 215, 0.14);
+    transition: color 0.3s ease;
+}
+
+.menu > a:last-child > li {
+    border-bottom: solid 2px #b0334a;
+}
+
+.menu > a >  li:hover {
+    background-color: #35363F;
+    color: #b0334a;
+    cursor: pointer;
+}
+
+.menuToggle input:checked ~ ul {
+    transform: translate(-100%, 0);
 }
