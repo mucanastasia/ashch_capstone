@@ -10,6 +10,22 @@ section.specials {
     padding: 0 10%;
 }
 
+@media (max-width: 1311px) {
+    .specials > .container {
+        padding: 0 4%;
+    }
+}
+
+@media (max-width: 1146px) {
+    main .specials > .container > div {
+        justify-content: center;
+        gap: 6%;
+    }
+    article.specialCard {
+        margin-bottom: 6%;
+    }
+}
+
 .specials > .container > div {
     display: flex;
     flex-wrap: wrap;

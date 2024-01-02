@@ -9,13 +9,29 @@ section.reviews {
     padding: 0 10%;
 }
 
+@media (max-width: 1311px) {
+    .reviews > .container {
+        padding: 0 4%;
+    }
+}
+
+@media (max-width: 1146px) {
+    main .reviews > .container > div {
+        justify-content: center;
+        gap: 6%;
+    }
+    article.reviewCard {
+        margin-bottom: 6%;
+    }
+}
+
 .reviews > .container > div {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
-.rewiewCard {
+.reviewCard {
     background-color: rgb(255, 255, 255, 0.1);
     width: 212px;
     height: 134px;
@@ -28,7 +44,7 @@ section.reviews {
     justify-content: space-between;
 }
 
-.rewiewCard:hover {
+.reviewCard:hover {
     transform: scale(104%);
 }
 
@@ -45,7 +61,7 @@ section.reviews {
     margin: 0 0 8px 2px;
 }
 
-.rewiewCard > p {
+.reviewCard > p {
     margin: 0;
     line-height: 28px;
     font-family: DM Sans;

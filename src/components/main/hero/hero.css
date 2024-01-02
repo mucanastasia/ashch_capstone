@@ -22,6 +22,21 @@
     padding: 0 10%;
 }
 
+@media (max-width: 1311px) {
+    .mainHero > article, main .aboutHero > article {
+        padding: 0 4%;
+    }
+}
+
+@media (max-width: 992px) {
+    section.aboutHero {
+        background: 
+        linear-gradient(180deg, #1D202F 0%, rgba(29, 32, 47, 0.00) 100%),
+        url(./assets/aboutbg.png);
+        background-size: cover;
+    }
+}
+
 .mainHero > article > .heroContainer {
     max-width: 612px;
 }
@@ -61,6 +76,12 @@
     font-weight: 600;
     line-height: 28px;
     letter-spacing: 0.15px;
+}
+
+@media (max-width: 576px) {
+    .mainHero span, .aboutHero span {
+        font-size: 20px;
+    }
 }
 
 .mainHero p, .aboutHero p {

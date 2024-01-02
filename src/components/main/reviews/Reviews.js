@@ -40,7 +40,7 @@ export default function Reviews({name, title, subtitle}) {
 
   const reviewsList = reviewsContent.map(({id, img, name, stars, review}) => {
     return (
-      <article key={id} className='rewiewCard'>
+      <article key={id} className='reviewCard'>
         <div className='reviewHeader'>
           <img className='reviewImg' src={img} alt={name} />
           <div>

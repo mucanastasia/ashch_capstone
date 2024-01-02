@@ -113,3 +113,45 @@ footer li:hover {
 .copyright a:last-child {
     margin: 0px;
 }
+
+@media (max-width: 1311px) {
+    footer > .footerContainer {
+        padding: 80px 4% 20px 4%;
+    }
+}
+
+@media (max-width: 1131px) {
+    footer div.footerNav {
+        gap: 40px;
+    }
+}
+
+@media (max-width: 951px) {
+    footer div.footerNav {
+        gap: 10px;
+    }
+}
+
+@media (max-width: 904px) {
+    .credit {
+        width: 100%;
+        margin-bottom: 40px;
+        padding-bottom: 20px;
+        border-bottom: solid 1px rgba(219, 219, 215, 0.3);
+    }
+    .credit > p {
+        max-width: 474px;
+    }
+    div.footerNav {
+        width: 100%;
+    }
+    div.footerNav {
+        gap: 4px;
+    }
+    div.footerNav {
+        margin-bottom: 0px;
+    }
+    div.footerNav div {
+        margin-bottom: 40px;
+    }
+}

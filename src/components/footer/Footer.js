@@ -164,8 +164,8 @@ export default function Footer() {
                     <p>© 2023  Aka Momiji Lounge. All rights reserved</p>
                 </div>
                 <div>
-                    <a href='#' alt='Privacy & Policy'>Privacy & Policy</a>
-                    <a href='#' alt='Terms & Condition'>Terms & Condition</a>
+                    <a href='/' alt='Privacy & Policy'>Privacy & Policy</a>
+                    <a href='/' alt='Terms & Condition'>Terms & Condition</a>
                 </div>
             </div>
         </div>

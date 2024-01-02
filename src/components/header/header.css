@@ -18,6 +18,14 @@ header {
     align-items: center;
 }
 
-.headerContainer button {
-    margin: 8px;
+@media (max-width: 1311px) {
+    header > .headerContainer {
+        padding: 0 4%;
+    }
+}
+
+@media (max-width: 993px) {
+    header > .headerContainer > img {
+        width: 230px;
+    }
 }

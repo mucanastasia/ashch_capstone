@@ -29,7 +29,7 @@ nav > .desktopNav li:active {
 }
 
 nav > .desktopNav > button.primary {
-    margin: 10px 8px;
+    margin: 10px 0 10px 8px;
 }
 
 nav > .desktopNav > button.primary:hover {
