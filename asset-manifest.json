@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/ashch_capstone/static/css/main.bb169dd3.css",
-    "main.js": "/ashch_capstone/static/js/main.9ab2cd90.js",
+    "main.css": "/ashch_capstone/static/css/main.1999be52.css",
+    "main.js": "/ashch_capstone/static/js/main.b9aae760.js",
     "static/js/787.c76bff8d.chunk.js": "/ashch_capstone/static/js/787.c76bff8d.chunk.js",
     "static/media/aboutbg.png": "/ashch_capstone/static/media/aboutbg.afd6c8930e58f4f4cb55.png",
     "static/media/herobg.png": "/ashch_capstone/static/media/herobg.65049ed6995f0f1dfe0e.png",
@@ -21,12 +21,12 @@
     "static/media/grey_star.svg": "/ashch_capstone/static/media/grey_star.fed1098c3af36ca34612.svg",
     "static/media/red_star.svg": "/ashch_capstone/static/media/red_star.a6c82745c6a5545744f7.svg",
     "static/media/facebook.svg": "/ashch_capstone/static/media/facebook.f0f411376af550528f97216db0aae099.svg",
-    "main.bb169dd3.css.map": "/ashch_capstone/static/css/main.bb169dd3.css.map",
-    "main.9ab2cd90.js.map": "/ashch_capstone/static/js/main.9ab2cd90.js.map",
+    "main.1999be52.css.map": "/ashch_capstone/static/css/main.1999be52.css.map",
+    "main.b9aae760.js.map": "/ashch_capstone/static/js/main.b9aae760.js.map",
     "787.c76bff8d.chunk.js.map": "/ashch_capstone/static/js/787.c76bff8d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.bb169dd3.css",
-    "static/js/main.9ab2cd90.js"
+    "static/css/main.1999be52.css",
+    "static/js/main.b9aae760.js"
   ]
 }
