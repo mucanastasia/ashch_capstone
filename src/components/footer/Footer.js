@@ -140,19 +140,19 @@ export default function Footer() {
                 </div>
                 <div className='footerNav'>
                     <div>
-                        <h3>Navigation</h3>
+                        <h6>Navigation</h6>
                         <ul>
                             {footerNavItems}
                         </ul>
                     </div>
                     <div>
-                        <h3>Contact</h3>
+                        <h6>Contact</h6>
                         <ul>
                             {footerContactItems}
                         </ul>
                     </div>
                     <div>
-                        <h3>Social</h3>
+                        <h6>Social</h6>
                         <ul>
                             {footerSocialItems}
                         </ul>

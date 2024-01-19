@@ -57,7 +57,7 @@ export default function Reviews({name, title, subtitle}) {
     <section className={name} id={name}>
       <div className='container'>
         <h2>{title}</h2>
-        <h4>{subtitle}</h4>
+        <h5>{subtitle}</h5>
         <div>
           {reviewsList}
         </div>

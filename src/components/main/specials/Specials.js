@@ -39,7 +39,7 @@ export default function Specials({name, title, subtitle}) {
         <article key={id} className='specialCard'>
           <div>
             <img src={img} alt={name} />
-            <h5>{name}</h5>
+            <h4>{name}</h4>
             <p>{content}</p>
             </div>
             <div className='specialFooter'>
@@ -55,7 +55,7 @@ export default function Specials({name, title, subtitle}) {
     <section className={name} id={name}>
       <div className='container'>
         <h2>{title}</h2>
-        <h4>{subtitle}</h4>
+        <h5>{subtitle}</h5>
         <div>
           {specialsList}
         </div>

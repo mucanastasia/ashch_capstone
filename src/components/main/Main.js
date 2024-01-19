@@ -12,7 +12,7 @@ export default function Main() {
         <Specials name='specials' title='Specials' subtitle={`Experience culinary brilliance with our Chef's Specials`} />
         <Reservation name='reservation' title='Reserve a Table' subtitle='Plan your dining experience by booking a table in advance' />
         <Reviews name='reviews' title='What Our Clients Say' subtitle='We are dedicated to enhancing your experience and value your feedback' />
-         <Hero name='aboutHero' />
+        <Hero name='aboutHero' />
     </main>
   );
 }

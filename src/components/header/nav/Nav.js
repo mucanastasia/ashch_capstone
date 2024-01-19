@@ -87,7 +87,7 @@ export default function Nav() {
                     <ul>
                         {navListDesktop}
                     </ul>
-                    <Button name='Reserve a Table' type='primary' />
+                    <Button name='Reserve a Table' type='primary' anc='reservation' />
                 </div>
             ) : (
                 <div className='menuToggle' id='menuToggle'>

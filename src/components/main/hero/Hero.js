@@ -14,6 +14,7 @@ export default function Hero({name}) {
         showButton: true,
         buttonText: 'Reserve a Table',
         buttonType: 'primary',
+        buttonAnc: 'reservation',
     }
 
     const aboutContent = {
@@ -39,7 +40,7 @@ export default function Hero({name}) {
                 <h1 className={displayContent.animationClass}>{displayContent.title}</h1>
                 <span className={displayContent.animationClass}>{displayContent.subtitle}</span>
                 <p className={displayContent.animationClass}>{displayContent.mainText}</p>
-                {displayContent.showButton && <Button name={displayContent.buttonText} type={displayContent.buttonType} />}
+                {displayContent.showButton && <Button name={displayContent.buttonText} type={displayContent.buttonType} anc={displayContent.buttonAnc}/>}
             </div>
         </article>
     </section>
