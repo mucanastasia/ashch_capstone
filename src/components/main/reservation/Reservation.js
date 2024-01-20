@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useReducer } from 'react';
+import React, { useState, useEffect } from 'react';
 import { DatePicker, TimePicker, Select, Input, Form, Button, Modal, ConfigProvider } from 'antd';
 import dayjs from 'dayjs';
 import 'dayjs/locale/en-gb';
@@ -11,7 +11,7 @@ dayjs.updateLocale('en-gb', {
   weekStart: 1,
 });
 
-  export default function Reservation({name, title, subtitle}) {
+  export default function Reservation({name, title, subtitle, disabledTimes, dispatch}) {
 
     const [getIsFormValid, setGetIsFormValid] = useState(false);
     const [date, setDate] = useState('');
@@ -22,16 +22,6 @@ dayjs.updateLocale('en-gb', {
     const [phoneNumber, setPhoneNumber] = useState('');
     const [getIsTimePickerAvailable, setGetIsTimePickerAvailable] = useState(false);
 
-    const initializeTimes = () => {
-      return [0, 1, 2, 3, 4, 5, 6, 7, 23];
-    };
-    
-    const updateDisabledTimes = (state, action) => {
-      return [0, 1, 2, 3, 4, 5, 6, 7, 23];
-    };
-
-
-    const [disabledTimes, dispatch] = useReducer(updateDisabledTimes, initializeTimes());
 
     useEffect(() => {
       const validateForm = () => {
@@ -199,6 +189,7 @@ dayjs.updateLocale('en-gb', {
                       onChange={handleTime}
                       inputReadOnly
                       disabled={!getIsTimePickerAvailable}
+                      allowClear={false}
                     />
                   </Form.Item>
                 </ConfigProvider>
