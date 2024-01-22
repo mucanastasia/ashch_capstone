@@ -1,19 +1,19 @@
 import React, { useState, useEffect } from 'react';
-import { DatePicker, TimePicker, Select, Input, Form, Button, Modal, ConfigProvider } from 'antd';
+import { DatePicker, TimePicker, Select, Input, Form, Button, Modal, notification, ConfigProvider } from 'antd';
 import dayjs from 'dayjs';
 import 'dayjs/locale/en-gb';
 import locale from 'antd/es/locale/en_GB';
 import updateLocale from 'dayjs/plugin/updateLocale';
 import './reservation.css';
+import { fetchAPI, submitAPI } from './mocks/mockAPI.js';
 
 dayjs.extend(updateLocale);
 dayjs.updateLocale('en-gb', {
   weekStart: 1,
 });
 
-  export default function Reservation({name, title, subtitle, disabledTimes, dispatch}) {
+  export default function Reservation({name, title, subtitle}) {
 
-    const [getIsFormValid, setGetIsFormValid] = useState(false);
     const [date, setDate] = useState('');
     const [time, setTime] = useState('');
     const [numberOfGuests, setNumberOfGuests] = useState('');
@@ -21,6 +21,10 @@ dayjs.updateLocale('en-gb', {
     const [customerName, setCustomerName] = useState('');
     const [phoneNumber, setPhoneNumber] = useState('');
     const [getIsTimePickerAvailable, setGetIsTimePickerAvailable] = useState(false);
+    const [getIsFormValid, setGetIsFormValid] = useState(false);
+    const [loadings, setLoadings] = useState([]);
+    const [buttonName, setButtonName] = useState('Make Your Reservation');
+    const [form] = Form.useForm();
 
 
     useEffect(() => {
@@ -36,41 +40,89 @@ dayjs.updateLocale('en-gb', {
       else {setGetIsTimePickerAvailable(false)}
     }, [date]);
 
-    const [form] = Form.useForm();
+    const [disabledTimes, setDisabledTimes] = useState();
+
+    useEffect(() => {
+      if (date) {
+        fetchAPI(date)
+        .then(result => {
+          setDisabledTimes(result);
+        })
+        .catch(error => {
+          setGetIsTimePickerAvailable(false);
+          openNotification(error.message, date);
+        });
+      };
+    },[date]);
+
+    const getDisabledTime = () => {
+      return {
+        disabledHours: () => disabledTimes,
+      };
+    };
+
+    // const getDisabledDate = (current) => {
+    //   return current && current < dayjs().endOf('day');
+    // };
+
+    const getDisabledDate = (current) => {
+      const startDate = dayjs('2024-01-23');
+      const endDate = dayjs('2024-02-23');
+      return current && (current < startDate || current > endDate);
+    };
+
+    const openNotification = (message, date) => {
+      notification.open({
+        message: `Error: ${date}`,
+        description: message,
+      });
+    };
 
     const handleDate = (value) => {
       const valueDate = dayjs(value).format('DD/MM/YYYY');
       setDate(valueDate);
-      dispatch({ type: 'update', date: value })
-    }
+      // setTime('');
+      // form.setFieldsValue({
+      //   time: null,
+      // });
+
+      // I commented out lines [84-87] to be able to see an error screen after submitting the form.
+      // Steps: - Select a date: 23/01/2024
+      //        - Select time: 16:00
+      //        - Change the date to 24/01/2024 (Don't touch the selected time; it should remain at 16:00)
+      //        - Fill out the rest of the form
+      //        - Submit the form
+      // Expected result: An error indicating that the selected time for the chosen date is not available.
+      // The commented code above will fix this bug by erasing the input 'Time' every time 'Date' is changed.
+    };
+
     const handleTime = (value) => {
       const valueTime = dayjs(value).format('HH:00');
       setTime(valueTime);
-    }
+    };
+
     const handleNumberOfGuests = (value) => {
       setNumberOfGuests(value);
-    }
+    };
 
     const handleOccasion = (value) => {
       setOccasion(value);
-    }
+    };
 
     const handleCustomerName = (event) => {
       const value = event.target.value;
       if (value) {
         setCustomerName(value);
-      }
-    }
+      };
+    };
 
     const handlePhoneNumber = (event) => {
       const value = event.target.value;
       if (value) {
         setPhoneNumber(value);
-      }
-    }
+      };
+    };
 
-    const [loadings, setLoadings] = useState([]);
-    const [buttonName, setButtonName] = useState('Make Your Reservation');
     const enterLoading = (index) => {
       setLoadings((prevLoadings) => {
         const newLoadings = [...prevLoadings];
@@ -88,26 +140,42 @@ dayjs.updateLocale('en-gb', {
       }, 2000);
     };
 
-    const handleSubmit = () => {
+    const handleSubmit = (e) => {
       enterLoading(0);
-      setTimeout(() => {
-        Modal.success({
-          content: (<div className='modalContent'>
-                      <h3>Success!</h3>
-                      <h4>Here are the details of your reservation:</h4>
-                      <p>Date: <b>{date}</b></p>
-                      <p>Time: <b>{time}</b></p>
-                      <p>Number Of Guests: <b>{numberOfGuests}</b></p>
-                      <p>Occasion: <b>{occasion}</b></p>
-                      <p>Your name: <b>{customerName}</b></p>
-                      <p>Your phone number: <b>{phoneNumber}</b></p>
-                      <span>We will send your confirmation to the phone number provided!</span>
-                    </div>),
-          onOk(){},
+      if (e) {
+        submitAPI(e)
+        .then(result => {
+          if (result === true) {
+            setTimeout(() => {
+              Modal.success({
+                content: (<div className='modalContent'>
+                            <h3>Success!</h3>
+                            <h4>Here are the details of your reservation:</h4>
+                            <p>Date: <b>{date}</b></p>
+                            <p>Time: <b>{time}</b></p>
+                            <p>Number Of Guests: <b>{numberOfGuests}</b></p>
+                            <p>Occasion: <b>{occasion}</b></p>
+                            <p>Your name: <b>{customerName}</b></p>
+                            <p>Your phone number: <b>{phoneNumber}</b></p>
+                            <span>We will send your confirmation to the phone number provided!</span>
+                          </div>),
+                onOk(){},
+              });
+              clearForm();
+            }, 1000);
+          };
+        })
+        .catch(error => {
+          Modal.error({
+            content: (<div className='modalContent modalContentError'>
+                      <h3>Error!</h3>
+                      <p>{error.message}</p>
+                      </div>),
+            onOk(){},
+          });
         });
-      }, 2000);
-      clearForm();
-    }
+      };
+    };
 
     const clearForm = () => {
       setDate('');
@@ -124,16 +192,6 @@ dayjs.updateLocale('en-gb', {
         name: '',
         phone: '',
       });
-    }
-
-    const disabledTime = () => {
-      return {
-        disabledHours: () => disabledTimes,
-      };
-    };
-
-    const disabledDate = (current) => {
-      return current && current < dayjs().endOf('day');
     };
 
     return (
@@ -157,7 +215,7 @@ dayjs.updateLocale('en-gb', {
                   >
                     <DatePicker
                       format='DD/MM/YYYY'
-                      disabledDate={disabledDate}
+                      disabledDate={getDisabledDate}
                       size='large'
                       className='reservationInput'
                       popupClassName='calendar'
@@ -180,7 +238,7 @@ dayjs.updateLocale('en-gb', {
                       changeOnBlur
                       size='large'
                       hideDisabledOptions
-                      disabledTime={disabledTime}
+                      disabledTime={getDisabledTime}
                       format='HH:00'
                       minuteStep={60}
                       className='reservationInput'
@@ -348,4 +406,4 @@ dayjs.updateLocale('en-gb', {
         </div>
       </section>
     );
-  }
+  };

@@ -251,6 +251,10 @@ div.ant-modal-confirm-body > div > div > div > h4 {
     padding-top: 10px;
 }
 
+.modalContentError > h3 {
+    color: #b0334a;
+}
+
 .modalContent h4 {
     font-size: 18px;
 }
@@ -285,4 +289,8 @@ div.ant-modal-confirm-body > span {
 
 .ant-picker.ant-picker-disabled {
     background-color: #484b57;
+}
+
+.ant-notification-notice-message {
+    font-weight: 600;
 }
