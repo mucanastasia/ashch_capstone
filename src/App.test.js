@@ -31,9 +31,8 @@ import React from 'react';
 import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom';
 import Reservation from './components/main/reservation/Reservation';
-import { fetchAPI } from './components/main/reservation/mocks/mockAPI';
-import { renderHook } from '@testing-library/react';
-// // import { initializeTimes, updateDisabledTimes } from './components/main/Main.js';
+import { fetchAPI } from './components/main/reservation/reservationForm/mocks/mockAPI';
+// import { initializeTimes, updateDisabledTimes } from './components/main/Main.js';
 
 
 describe("Reservation form", () => {
