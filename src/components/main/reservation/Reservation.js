@@ -20,10 +20,12 @@ dayjs.updateLocale('en-gb', {
     const [occasion, setOccasion] = useState('');
     const [customerName, setCustomerName] = useState('');
     const [phoneNumber, setPhoneNumber] = useState('');
+
     const [getIsTimePickerAvailable, setGetIsTimePickerAvailable] = useState(false);
     const [getIsFormValid, setGetIsFormValid] = useState(false);
     const [loadings, setLoadings] = useState([]);
     const [buttonName, setButtonName] = useState('Make Your Reservation');
+    const [disabledTimes, setDisabledTimes] = useState();
     const [form] = Form.useForm();
 
 
@@ -39,8 +41,6 @@ dayjs.updateLocale('en-gb', {
       if (date) {setGetIsTimePickerAvailable(true)}
       else {setGetIsTimePickerAvailable(false)}
     }, [date]);
-
-    const [disabledTimes, setDisabledTimes] = useState();
 
     useEffect(() => {
       if (date) {
