@@ -69,7 +69,7 @@ export default function ReservationForm() {
         //   time: null,
         // });
 
-        // I commented out lines [73-76] to be able to see an error screen after submitting the form.
+        // I commented out lines [67-70] to be able to see an error screen after submitting the form.
         // Steps: - Select a date: 23/01/2024
         //        - Select time: 16:00
         //        - Change the date to 24/01/2024 (Don't touch the selected time; it should remain at 16:00)
