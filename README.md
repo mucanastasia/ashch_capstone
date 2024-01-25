@@ -1,70 +1,60 @@
-# Getting Started with Create React App
+# Aka Momiji Lounge - Website & Table Reservation Feature
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This repository hosts the front-end project for the Aka Momiji Lounge, a fictional restaurant, created as the final project for the Meta Front-End Developer Professional Certificate course. This project serves to demonstrate my web development skills on my journey to become a front-end developer.
 
-## Available Scripts
+## Project Overview
 
-In the project directory, you can run:
+The "Aka Momiji Lounge" is a conceptual restaurant offering a serene dining experience. This web application serves as its online presence, featuring restaurant information, specials, customer reviews, and most importantly, a table reservation feature.
 
-### `npm start`
+### Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Reserve a Table:** The centerpiece of the site, this feature allows users to book a table, incorporating form validation and dynamic time selection based on the chosen date.
+- **Specials:** Explore the restaurant's special dishes.
+- **Customer Reviews:** Read testimonials from "customers" to get a feel for the dining experience.
+- **About the Restaurant:** Discover the concept and ambiance of the Aka Momiji Lounge.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Demo
 
-### `npm test`
+Experience the application here:
+[Visit Aka Momiji Lounge](https://mucanastasia.github.io/ashch_capstone/)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Prototype
 
-### `npm run build`
+For a visual representation of the design, view the prototype on Figma:
+[View Prototype](https://www.figma.com/file/VKUXmrXOQUljqPakhDONsX/AkaMomiji)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Technology Stack
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **React:** Enables dynamic site features with its component-based architecture.
+- **HTML & CSS:** Structure and style the application, ensuring it is responsive and user-friendly.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Getting Started
 
-### `npm run eject`
+To set up the project locally, follow these steps:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/mucanastasia/ashch_capstone.git
+    ```
+2. Navigate to the project directory:
+    ```bash
+    cd ashch_capstone
+    ```
+3. Install dependencies:
+    ```bash
+    npm install
+    ```
+4. Start the development server:
+    ```bash
+    npm start
+    ```
+    The application will open in your default browser at `http://localhost:3000`.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Feedback and Contact
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+This project was developed for educational purposes and to demonstrate my front-end development skills. If you have suggestions or feedback, please feel free to contact me via email at [mucanastasia@gmail.com](mailto:mucanastasia@gmail.com).
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Thank you
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Thank you for taking the time to explore my "Aka Momiji Lounge" project.
+This journey into front-end development has been both challenging and rewarding, and this project reflects my continuous dedication to honing my skills. I'm looking forward to continuing to learn and grow in the world of web development.
