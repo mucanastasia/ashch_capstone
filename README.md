@@ -1,4 +1,4 @@
-# Aka Momiji Lounge - Website & Table Reservation Feature
+# Aka Momiji Lounge - Website & Table Reservation
 
 This repository hosts the front-end project for the Aka Momiji Lounge, a fictional restaurant, created as the final project for the Meta Front-End Developer Professional Certificate course. This project serves to demonstrate my web development skills on my journey to become a front-end developer.
 
@@ -8,10 +8,10 @@ The "Aka Momiji Lounge" is a conceptual restaurant offering a serene dining expe
 
 ### Features
 
-- **Reserve a Table:** The centerpiece of the site, this feature allows users to book a table, incorporating form validation and dynamic time selection based on the chosen date.
+- **Reserve a Table:** The centrepiece of the site, this feature allows users to book a table, incorporating form validation and dynamic time selection based on the chosen date.
 - **Specials:** Explore the restaurant's special dishes.
 - **Customer Reviews:** Read testimonials from "customers" to get a feel for the dining experience.
-- **About the Restaurant:** Discover the concept and ambiance of the Aka Momiji Lounge.
+- **About the Restaurant:** Discover the concept and ambience of the Aka Momiji Lounge.
 
 ### Demo
 
