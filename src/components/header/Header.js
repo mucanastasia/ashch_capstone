@@ -8,7 +8,7 @@ export default function Header() {
   return (
     <header>
       <div className='headerContainer'>
-        <a href = '/'><img src={logo} alt="Logo" /></a>
+        <a href = './'><img src={logo} alt="Logo" /></a>
         <Nav />
       </div>
     </header>

@@ -35,7 +35,7 @@ export default function Nav() {
         {
             id: 'home',
             name: 'Home',
-            link: '/',
+            link: './',
             type: 'navLink',
             fnc: handleClick('hero'),
         },

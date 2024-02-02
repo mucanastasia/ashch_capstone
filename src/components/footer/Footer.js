@@ -46,7 +46,7 @@ export default function Footer() {
         {
             id: 'footerHome',
             name: 'Home',
-            link: '/',
+            link: './',
             fnc: handleClick('hero'),
         },
         {
