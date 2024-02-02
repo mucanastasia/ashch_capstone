@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/ashch_capstone/static/css/main.d4d23b78.css",
-    "main.js": "/ashch_capstone/static/js/main.2929ed5a.js",
-    "static/js/787.c76bff8d.chunk.js": "/ashch_capstone/static/js/787.c76bff8d.chunk.js",
+    "main.css": "/ashch_capstone/static/css/main.eb621cc2.css",
+    "main.js": "/ashch_capstone/static/js/main.f4d1270c.js",
+    "static/js/592.8f476eb2.chunk.js": "/ashch_capstone/static/js/592.8f476eb2.chunk.js",
     "static/media/aboutbg.png": "/ashch_capstone/static/media/aboutbg.afd6c8930e58f4f4cb55.png",
     "static/media/herobg.png": "/ashch_capstone/static/media/herobg.65049ed6995f0f1dfe0e.png",
     "static/media/img2.png": "/ashch_capstone/static/media/img2.261879ba2bf17634c33a.png",
@@ -21,12 +21,12 @@
     "static/media/grey_star.svg": "/ashch_capstone/static/media/grey_star.fed1098c3af36ca34612.svg",
     "static/media/red_star.svg": "/ashch_capstone/static/media/red_star.a6c82745c6a5545744f7.svg",
     "static/media/facebook.svg": "/ashch_capstone/static/media/facebook.f0f411376af550528f97216db0aae099.svg",
-    "main.d4d23b78.css.map": "/ashch_capstone/static/css/main.d4d23b78.css.map",
-    "main.2929ed5a.js.map": "/ashch_capstone/static/js/main.2929ed5a.js.map",
-    "787.c76bff8d.chunk.js.map": "/ashch_capstone/static/js/787.c76bff8d.chunk.js.map"
+    "main.eb621cc2.css.map": "/ashch_capstone/static/css/main.eb621cc2.css.map",
+    "main.f4d1270c.js.map": "/ashch_capstone/static/js/main.f4d1270c.js.map",
+    "592.8f476eb2.chunk.js.map": "/ashch_capstone/static/js/592.8f476eb2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d4d23b78.css",
-    "static/js/main.2929ed5a.js"
+    "static/css/main.eb621cc2.css",
+    "static/js/main.f4d1270c.js"
   ]
 }
