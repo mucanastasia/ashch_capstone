@@ -71,6 +71,7 @@
 }
 
 .mainHero span, .aboutHero span {
+    color: #DBDBD7;
     font-size: 22px;
     font-family: DM Sans;
     font-weight: 600;

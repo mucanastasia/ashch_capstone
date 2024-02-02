@@ -64,19 +64,10 @@ export default function ReservationForm() {
     const handleDate = (value) => {
         const valueDate = dayjs(value).format('DD/MM/YYYY');
         setDate(valueDate);
-        // setTime('');
-        // form.setFieldsValue({
-        //   time: null,
-        // });
-
-        // I commented out lines [67-70] to be able to see an error screen after submitting the form.
-        // Steps: - Select a date: 23/01/2024
-        //        - Select time: 16:00
-        //        - Change the date to 24/01/2024 (Don't touch the selected time; it should remain at 16:00)
-        //        - Fill out the rest of the form
-        //        - Submit the form
-        // Expected result: An error indicating that the selected time for the chosen date is not available.
-        // The commented code above will fix this bug by erasing the input 'Time' every time 'Date' is changed.
+        setTime('');
+        form.setFieldsValue({
+          time: null,
+        });
     };
 
     const handleTime = (value) => {

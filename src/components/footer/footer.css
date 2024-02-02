@@ -79,6 +79,10 @@ footer li:hover {
     background-color: rgb(255, 255, 255, 0.05);
 }
 
+.footerNav > div:nth-child(2) > ul li:hover {
+    background-color: #14151d;
+}
+
 .copyright {
     display: flex;
     justify-content: space-between;

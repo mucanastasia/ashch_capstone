@@ -46,9 +46,10 @@ section.reservation {
     display: none;
 }
 
-.ant-btn {
+.ant-modal-confirm-btns> .ant-btn {
     width: 92px;
 }
+
 .reservation button {
     width: 100%;
 }
@@ -109,10 +110,6 @@ span.ant-picker-clear:hover,
     border: 0px;
 }
 
-.timePopup {
-    width: 120px;
-}
-
 .calendar, .ant-picker-dropdown .ant-picker-panel-container, .ant-select-dropdown {
     background-color: #454750;
     border-radius: 6px;
@@ -122,9 +119,6 @@ span.ant-picker-clear:hover,
     width: 300px;
 }
 
-.ant-picker-dropdown .ant-picker-cell-disabled::before {
-    background-color: #52545f;
-}
 .ant-picker-dropdown .ant-picker-cell-disabled.ant-picker-cell-today .ant-picker-cell-inner::before {
     border-color: rgb(219, 219, 215, 0.5);
 }
@@ -167,7 +161,7 @@ span.ant-picker-clear:hover,
 .ant-select-item.ant-select-item-option.ant-select-item-option-active.ant-select-item-option-selected,
 .ant-select-item.ant-select-item-option.ant-select-item-option-selected {
     background-color: rgb(219, 219, 215, 0.2);
-    border-radius: 0;
+    border-radius: 4px;
 }
 
 .ant-picker-dropdown .ant-picker-cell:hover:not(.ant-picker-cell-selected):not(.ant-picker-cell-range-start):not(.ant-picker-cell-range-end):not(.ant-picker-cell-range-hover-start):not(.ant-picker-cell-range-hover-end) .ant-picker-cell-inner {
@@ -175,14 +169,13 @@ span.ant-picker-clear:hover,
     border-radius: 50px;
 }
 
-.ant-picker-dropdown .ant-picker-time-panel-column >li.ant-picker-time-panel-cell .ant-picker-time-panel-cell-inner,
 .ant-picker-dropdown .ant-picker-cell-in-view.ant-picker-cell-selected .ant-picker-cell-inner {
     border-radius: 50px;
 }
 
 .ant-select-item.ant-select-item-option.ant-select-item-option-active:hover {
     background-color: rgb(255, 255, 255, 0.1);
-    border-radius: 0;
+    border-radius: 4px;
 }
 
 .ant-select-item.ant-select-item-option.ant-select-item-option {
@@ -293,4 +286,34 @@ div.ant-modal-confirm-body > span {
 
 .ant-notification-notice-message {
     font-weight: 600;
+}
+
+.timePopup {
+    width: 88px;
+}
+
+.ant-picker-time-panel-cell-inner::after {
+    content: ':00';
+}
+
+.ant-picker-dropdown .ant-picker-time-panel-column >li.ant-picker-time-panel-cell .ant-picker-time-panel-cell-inner {
+    width: 72px;
+}
+
+.anticon,
+.ant-picker-prev-icon,
+.ant-picker-next-icon,
+.ant-picker-super-prev-icon,
+.ant-picker-super-next-icon,
+.ant-picker-cell-inner,
+.ant-btn:disabled,
+.ant-picker-header-view > button.ant-picker-month-btn,
+.ant-picker-header-view > button.ant-picker-year-btn,
+.ant-picker-header-view > button.ant-picker-decade-btn,
+.ant-select-item-option-content {
+    color:#DBDBD7;
+}
+
+.ant-picker-dropdown .ant-picker-cell-disabled > .ant-picker-cell-inner {
+    color: #828282;
 }

@@ -9,6 +9,15 @@ section.reviews {
     padding: 0 10%;
 }
 
+@media (max-width: 600px) {
+    article.reviewCard {
+        transform: none;
+    }
+    article.reviewCard:hover {
+        transform: none;
+    }
+}
+
 @media (max-width: 1311px) {
     .reviews > .container {
         padding: 0 4%;

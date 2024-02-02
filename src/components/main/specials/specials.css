@@ -10,6 +10,15 @@ section.specials {
     padding: 0 10%;
 }
 
+@media (max-width: 600px) {
+    article.specialCard {
+        transform: none;
+    }
+    article.specialCard:hover {
+        transform: none;
+    }
+}
+
 @media (max-width: 1311px) {
     .specials > .container {
         padding: 0 4%;
@@ -72,6 +81,7 @@ section.specials {
 
 .specialFooter > span {
     font-family: DM Sans;
+    color: #DBDBD7;
     font-size: 24px;
     font-style: normal;
     font-weight: 700;

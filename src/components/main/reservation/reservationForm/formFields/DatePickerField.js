@@ -12,14 +12,8 @@ dayjs.updateLocale('en-gb', {
 
 export default function DatePickerField ({value, onChange}) {
     const getDisabledDate = (current) => {
-        const startDate = dayjs('2024-01-23');
-        const endDate = dayjs('2024-02-23');
-        return current && (current < startDate || current > endDate);
+        return current && (current < dayjs() || current > dayjs().add(31, 'day'));
     };
-
-    // const getDisabledDate = (current) => {
-    //   return current && current < dayjs().endOf('day');
-    // };
 
     return (
         <ConfigProvider locale={locale}>
@@ -42,6 +36,7 @@ export default function DatePickerField ({value, onChange}) {
                 onChange={onChange}
                 inputReadOnly
                 allowClear={false}
+                picker='date'
             />
             </Form.Item>
         </ConfigProvider>

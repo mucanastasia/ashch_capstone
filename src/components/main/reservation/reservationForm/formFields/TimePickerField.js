@@ -27,6 +27,7 @@ export default function TimePickerField ({value, onChange, disabledTime, disable
                 inputReadOnly
                 disabled={disabled}
                 allowClear={false}
+                showNow={false}
             />
         </Form.Item>
     );
